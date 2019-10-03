@@ -10,6 +10,10 @@ body {
 #app {
   width: 100%;
   min-height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #app header {
@@ -112,6 +116,7 @@ body {
 
 #app span {
   color: #ffffff;
+  width: 60vw;
 }
 
 #app a.btn {
