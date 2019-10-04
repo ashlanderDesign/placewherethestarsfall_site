@@ -110,13 +110,13 @@ body {
   padding: 4vh 2vw;
 }
 
-#app a {
-  text-decoration: none;
+#app footer span {
+  color: #ffffff;
+  width: 50vw;
 }
 
-#app span {
-  color: #ffffff;
-  width: 60vw;
+#app a {
+  text-decoration: none;
 }
 
 #app a.btn {
@@ -133,5 +133,77 @@ body {
 
 #app a.btn.btn-large {
   padding: 2vh 4vw;
+}
+
+#app .modal {
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+  min-width: 50vw;
+  min-height: 60vh;
+  z-index: 999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app .modal .modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+#app .modal .modal-body {
+  min-height: 45vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#app .modal .modal-body .link {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2vh 1vw;
+  margin-bottom: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #000;
+}
+
+#app .modal .modal-body .link a {
+  color: #000000;
+}
+
+#app .modal .modal-body .link .selected {
+  color: #11aa11;
 }
 /*# sourceMappingURL=main.css.map */
