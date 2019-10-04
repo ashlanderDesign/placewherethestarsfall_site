@@ -14,7 +14,8 @@ var app = new Vue({
                 release_date: "Выходит в 2020",
                 done: "Готово",
                 designer_link: "Дизайнер и разработчик",
-                support_link: "Поддержать"
+                support_link: "Поддержать",
+                logo_name: "ru_logo"
             },
             eng: {
                 description: "Place where the stars fall is a visual novel about man named Sadzihara Kenko, who lives his regular life as an office worker in famous IT company and dreams about better life.",
@@ -25,7 +26,8 @@ var app = new Vue({
                 release_date: "Release in 2020",
                 done: "Done",
                 designer_link: "Designer and developer",
-                support_link: "Support me"
+                support_link: "Support me",
+                logo_name: "en_logo"
             }
         }
     },
