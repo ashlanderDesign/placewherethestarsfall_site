@@ -40,6 +40,17 @@ var app = new Vue({
                 case "Русский":
                     return this.content.rus;
             }
+        },
+        detectLang: function(){
+            var detectedLang = navigator.language || navigator.userLanguage;
+            if(detectedLang == "ru"){
+                this.lang = "Русский"
+            } else {
+                this.lang = "English"
+            }
         }
+    },
+    beforeMount: function(){
+        this.detectLang()
     }
 })
