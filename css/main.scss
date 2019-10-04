@@ -163,4 +163,34 @@ body{
             justify-content: flex-start;
         }
     }
+
+    .loader{
+        position: fixed;
+        z-index: 9999999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+
+        .circle{
+            width: 5vw;
+            height: 5vw;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: loader-circle .7s infinite alternate-reverse ease-in-out;
+        }
+    }
+}
+
+@keyframes loader-circle{
+    0%{
+        width: 5vw;
+        height: 5vw;
+    }
+    100%{
+        height: 8vw;
+        width: 8vw;
+    }
 }

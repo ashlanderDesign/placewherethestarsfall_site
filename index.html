@@ -12,6 +12,9 @@
 
 <body>
     <div id="app">
+        <div class="loader" v-if='isLoading == true'>
+            <div class="circle"></div>
+        </div>
         <header>
             <a href="https://vk.com/ashlander_design">{{tr().designer_link}}</a>
             <a href='#support'>{{tr().support_link}}</a>

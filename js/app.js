@@ -4,6 +4,7 @@ var app = new Vue({
         lang: "English",
         modal: "selectlang",
         modalShow: false,
+        isLoading: true,
         content: {
             rus: {
                 description: "Холм звездопадов - визуальная новелла о парне по имени Садзихара Кенко, который живет самой обыденной жизнью офисного работника известной ИТ компании и мечтает о лучшей жизни.",
@@ -49,6 +50,11 @@ var app = new Vue({
                 this.lang = "English"
             }
         }
+    },
+    mounted: function(){
+        setTimeout(() => {
+            this.isLoading = false;
+        }, 5000);
     },
     beforeMount: function(){
         this.detectLang()

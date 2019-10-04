@@ -219,4 +219,51 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
+#app .loader {
+  position: fixed;
+  z-index: 9999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+#app .loader .circle {
+  width: 5vw;
+  height: 5vw;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: loader-circle .7s infinite alternate-reverse ease-in-out;
+}
+
+@-webkit-keyframes loader-circle {
+  0% {
+    width: 5vw;
+    height: 5vw;
+  }
+  100% {
+    height: 8vw;
+    width: 8vw;
+  }
+}
+
+@keyframes loader-circle {
+  0% {
+    width: 5vw;
+    height: 5vw;
+  }
+  100% {
+    height: 8vw;
+    width: 8vw;
+  }
+}
 /*# sourceMappingURL=main.css.map */
