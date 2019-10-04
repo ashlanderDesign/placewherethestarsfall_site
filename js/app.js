@@ -42,7 +42,7 @@ var app = new Vue({
             }
         },
         detectLang: function(){
-            var detectedLang = navigator.language || navigator.userLanguage || navigator.languages[0];
+            var detectedLang = navigator.language || navigator.userLanguage || navigator.languages[1];
             if(detectedLang == "ru"){
                 this.lang = "Русский"
             } else {
